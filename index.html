@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Market</title>
+    <!-- Integrating Bulma CSS Framework and style.css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="Develop/public/css/style.css">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="Assets/logo-social.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="nav" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Categories
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    Category 1
+                  </a>
+                  <a class="navbar-item">
+                    Category 2
+                  </a>
+                  <a class="navbar-item">
+                    Category 3
+                  </a>
+                  <a class="navbar-item">
+                    Category 4
+                  </a>
+                </div>
+              </div>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About us
+                </a>
+                <a class="navbar-item">
+                  Contact us
+                </a>
+                <hr class="navbar-divider">
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <a class="navbar-item" href="#">
+                <img src="Assets/shopping-cart_711897.png" width="28" height="28">
+            </a>
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-link" id = "signup">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-info">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- LogeIn Modal -->
+    <div class = "modal">
+        <div class = "modal-background"></div>
+        <div class = "modal-content has-background-white py-5 px-5">
+            <h2 class = "modalsignup is-size-2 has-text-weight-bold has-text-centered has-text-link">Welcome</h2>
+            <hr class = "divider">
+            <div class = "columns is-mobile is-multiline is-centered ml-auto">
+                <div class = "column">
+                    <textarea name="Firstname" placeholder = "First Name" id="firstName" cols="30" rows="2"></textarea>
+                </div>
+                <div class = "column">
+                    <textarea name="Lastname" placeholder = "Last Name" id="lastName" cols="30" rows="2"></textarea>
+                </div>
+                <div class = "column">
+                    <textarea name="Email" placeholder = "Email Address" id="emailAddress" cols="30" rows="2"></textarea>
+                </div>
+                <div class = "column">
+                    <textarea name="Password" placeholder = "Password" id="password" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="box has-text-centered">
+                <button class = "button is-hovered is-link">Sign Up</button> 
+            </div>
+        </div>
+    </div>
+
+
+      <script src="Develop/controller/index.js"></script>
+</body>
+</html>
