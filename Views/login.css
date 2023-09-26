@@ -1,0 +1,33 @@
+.container {
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(253, 253, 253);
+    background-color: rgb(75, 75, 255);
+    border-radius: 10px;
+}
+
+textarea {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(75, 75, 255);
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(75, 75, 255);
+    font-size: 17px;
+}
