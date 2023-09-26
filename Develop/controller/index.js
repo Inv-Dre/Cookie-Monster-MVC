@@ -1,11 +1,6 @@
-// LogeIN Modal
-const signUpButton = document.querySelector("#signup");
-const modalBg = document.querySelector(".modal-background");
-const modal = document.querySelector(".modal");
+const router = require('express').Router();
+const apiRoutes = require('./api');
 
-signUpButton.addEventListener("click", () => {
-    modal.classList.add("is-active");
-});
-modalBg.addEventListener("click", () => {
-    modal.classList.remove("is-active");
-});
+router.use('/api', apiRoutes);
+
+module.exports = router;
