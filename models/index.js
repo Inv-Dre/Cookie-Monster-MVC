@@ -9,7 +9,7 @@ Product.belongsTo(Category, {
 Category.hasMany(Product, {
     foreignKey: 'category_id'
 });
-Order.belongsTo(Customer, {
+Order.belongsTo(User, {
     foreignKey: 'customer_id'
 });
 
