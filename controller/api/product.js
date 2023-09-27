@@ -3,8 +3,9 @@ const { Product } = require('../../models')
 
 router.get('/', async (req, res) => {
 try{
-    const productData = await Product.findAll()
-    res.status(400).json(productData);
+    const productData = await Product.findAll();
+    res.render('homepage', { productData })
+    
 } catch (err) {
     res.status(400).json(err);
 
