@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Market</title>
+        <!-- Integrating Bulma CSS Framework and style.css file -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="Assets/logo-social.png" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            </div>
+        
+            <div id="nav" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                Home
+                </a>
+        
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Categories
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        Category 1
+                    </a>
+                    <a class="navbar-item">
+                        Category 2
+                    </a>
+                    <a class="navbar-item">
+                        Category 3
+                    </a>
+                    <a class="navbar-item">
+                        Category 4
+                    </a>
+                    </div>
+                </div>
+        
+                <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+        
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                    About us
+                    </a>
+                    <a class="navbar-item">
+                    Contact us
+                    </a>
+                    <hr class="navbar-divider">
+                </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Sign in section -->
+        <div class = "container">
+            <h2>Welcome Back</h2>
+            <div class = "columns is-mobile is-multiline is-centered ml-auto py-5 px-5">
+                <div class = "column">
+                    <textarea name="Email" placeholder = "Email Address" id="logeInEmail" cols="30" rows="2"></textarea>
+                </div>
+                <div class = "column">
+                    <textarea name="Password" placeholder = "Password" id="logeInPassword" cols="30" rows="2"></textarea>
+                </div>
+                <div class = "column">
+                    <button class = "btn is-hovered">Sign in</button> 
+                </div>
+            </div>
+        </div>
+
+        <Footer>
+            <h3>Copyright © Cookie Monsters</h3>
+        </Footer>
+       
+
+        <script src="Develop/controller/index.js"></script>
+    </body>
+</html>
