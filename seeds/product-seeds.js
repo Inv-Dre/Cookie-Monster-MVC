@@ -6,21 +6,21 @@ const productData = [
         price: 799.99,
         stock: 100,
         category_id: 1,
-        filename:"01-iphone-15"
+        filename:"01-iphone-15.jpg"
     },
     {
         product_name: 'Peloton Exercise Bike',
         price: 1145.00,
         stock: 5,
         category_id: 2,
-        filename:"02-peloton-bike"
+        filename:"02-peloton-bike.jpg"
     },
     {
         product_name: 'Apple AirPods Max',
         price: 479.00,
         stock: 12,
         category_id: 1,
-        filename:"03-air-pods-max"
+        filename:"03-air-pods-max.jpg"
     },
     {
         product_name: 'Bloom Nutrition Super Greens Powder',
