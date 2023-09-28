@@ -1,95 +1,40 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Online Market</title>
-        <!-- Integrating Bulma CSS Framework and style.css file -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" href="../public/css/login.css">
-    </head>
-    <body>
-        <!-- NAV BAR -->
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <img src="Assets/logo-social.png" width="112" height="28">
-            </a>
-        
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-            </div>
-        
-            <div id="nav" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item">
-                Home
-                </a>
-        
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Categories
-                    </a>
-            
-                    <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        Category 1
-                    </a>
-                    <a class="navbar-item">
-                        Category 2
-                    </a>
-                    <a class="navbar-item">
-                        Category 3
-                    </a>
-                    <a class="navbar-item">
-                        Category 4
-                    </a>
-                    </div>
-                </div>
-        
-                <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                    More
-                </a>
-        
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                    About us
-                    </a>
-                    <a class="navbar-item">
-                    Contact us
-                    </a>
-                    <hr class="navbar-divider">
-                </div>
-                </div>
-            </div>
-            </div>
-        </nav>
+<div class="row justify-space-between-md">
+  <div class="login-card">
+    <h2 class="page-title">Login</h2>
+    <form class="form login-form">
+      <div class="form-group">
+        <label for="email-login">Email:</label>
+        <input class="form-input" type="text" id="email-login" />
+      </div>
+      <div class="form-group">
+        <label for="password-login">Password:</label>
+        <input class="form-input" type="password" id="password-login" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">login</button>
+      </div>
+    </form>
+  </div>
+  <div class="login-card">
+    <h2 class="page-title">Signup</h2>
+    <form class="form signup-form">
+      <div class="form-group">
+        <label for="username-signup">Username:</label>
+        <input class="form-input" type="text" id="username-signup" />
+      </div>
+      <div class="form-group">
+        <label for="email-signup">Email:</label>
+        <input class="form-input" type="text" id="email-signup" />
+      </div>
+      <div class="form-group">
+        <label for="password-signup">Password:</label>
+        <input class="form-input" type="password" id="password-signup" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">signup</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-        <!-- Sign in section -->
-        <div class = "container">
-            <h2>Welcome Back</h2>
-            <div class = "columns is-mobile is-multiline is-centered ml-auto py-5 px-5">
-                <div class = "column">
-                    <textarea name="Email" placeholder = "Email Address" id="logeInEmail" cols="30" rows="2"></textarea>
-                </div>
-                <div class = "column">
-                    <textarea name="Password" placeholder = "Password" id="logeInPassword" cols="30" rows="2"></textarea>
-                </div>
-                <div class = "column">
-                    <button class = "btn is-hovered">Sign in</button> 
-                </div>
-            </div>
-        </div>
-
-        <Footer>
-            <h3>Copyright © Cookie Monsters</h3>
-        </Footer>
-       
-
-        <script src=""></script>
-    </body>
-</html>
+<script src="./js/login.js"></script>

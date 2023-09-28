@@ -1,10 +1,8 @@
 const router = require('express').Router();
-const product = require('./product.js');
-const login = require('./loginRoute.js');
-const logout  = require('./logout.js');
+const user = require('./userRoute.js');
 
-router.use('/logout', logout );
-router.use('/login', login );
-router.use('/homepage', product );
+
+router.use('/user', user  );
+
 
 module.exports = router;
