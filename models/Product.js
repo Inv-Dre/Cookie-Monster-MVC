@@ -37,6 +37,10 @@ Product.init(
         key: "id",
       },
     },
+    filename:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     sequelize,
