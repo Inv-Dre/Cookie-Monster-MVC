@@ -1,9 +1,11 @@
-<section>
-    <div>
+<section class="section has-background-info-light my-4 box">
+    <div class="column is-one-fifth">
+    <a href="/product/{{id}}">
     <img src="/images/{{filename}}" alt="{{product_name}}">
-    <h2>{{product_name}}</h2>
-    <p>price:{{price}}</p>
-    <p>stock:{{stock}}</p>
-    <p>category id:{{category_id}}</p>
+    <h2 class="title">{{product_name}}</h2>
+    </a>
+    <p class="subtitle">price: ${{price}}</p>
+    <p class="subtitle">stock: {{stock}}</p>
+    <p class="subtitle">category id: {{category_id}}</p>
     </div>
 </section>

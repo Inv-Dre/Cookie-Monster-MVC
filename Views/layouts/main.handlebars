@@ -1,20 +1,20 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Market</title>
+    <title>Cookie Monster Marketplace</title>
     <!-- Integrating Bulma CSS Framework and style.css file -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    {{!-- <link rel="stylesheet" href="Develop/public/css/style.css"> --}}
+    <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
     <!-- NAV BAR -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          {{!-- <a class="navbar-item" href="#">
-            <img src="Assets/logo-social.png" width="112" height="28">
-          </a> --}}
+         
+            <img src="/images/cookiemonster.avif" width="112" height="28">
+          
       
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav">
             <span aria-hidden="true"></span>
@@ -25,7 +25,7 @@
       
         <div id="nav" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item">
+            <a href="/" class="navbar-item">
               Home
             </a>
       
@@ -42,10 +42,10 @@
                     Electronics
                   </a>
                   <a class="navbar-item">
-                    Category 3
+                    Movies & Games
                   </a>
                   <a class="navbar-item">
-                    Category 4
+                    Books
                   </a>
                 </div>
               </div>
@@ -66,14 +66,19 @@
               </div>
             </div>
           </div>
+          <div class="navbar-item is-expanded">
+          <label for="search"></label>
+          <input class="input is-info" type="search" id="search-bar" placeholder="Search" />
+          <button id="searchbtn" class="button is-info">Search</button>
+           </div>
       
           <div class="navbar-end">
-            {{!-- <a class="navbar-item" href="#">
-                <img src="Assets/shopping-cart_711897.png" width="28" height="28">
-            </a> --}}
+            <a href="/cart" class="navbar-item" href="#">
+                <img src="/images/shopping-cart_711897.png" width="28" height="28">
+            </a>
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-link" id = "signup">
+                <a href="/signup" class="button is-link" id = "signup">
                   <strong>Sign up</strong>
                 </a>
                 {{#if logged_in}}
@@ -88,10 +93,10 @@
           </div>
         </div>
       </nav>
-
-    
     <main>
+      <div class="container hero">
         {{{body}}}
+      </div>
     </main>
     {{#if logged_in}}
     <script src='/js/logout.js'></script>
