@@ -1,4 +1,10 @@
+{{#if product_name}}
 {{>products-details}}
-<button id="buy"> Buy </button>
+{{else}}
+<div class="centered">
+<p>empty cart</p>
+</div>
+{{/if}}
+<button class="button is-success" id="checkout"> Checkout </button>
 
 
