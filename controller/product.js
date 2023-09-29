@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { Product } = require('../models')
-// const withAuth = require('../utils/auth');
+const { Product, User, Cart } = require('../models')
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
 try{
@@ -54,8 +54,16 @@ router.get('/signup', async (req, res) => {
 res.render('login');
 });
 
-router.get('/cart', async (req,res) =>{
-  res.render('cart')
+router.get('/cart', withAuth,  async (req,res) =>{
+  const cartData = await User.findOne({ where: { id: req.session.user_id },
+    include:{model: Cart}})
+    const cart =cartData.cart ? cartData.get({plain:true}) : null
+   
+    const productId = cart?.cart ? JSON.parse(cart.cart.items)[0]: null
+    const productData = await Product.findByPk(productId)
+    const product = productData ? productData.get({plain:true}) : null
+    console.log(product)
+  res.render('cart', product)
 })
 
 module.exports = router;

@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { User } = require('../../models')
+const { User, Cart } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.post('/login', async (req, res) => {
     try {
@@ -20,7 +21,7 @@ router.post('/login', async (req, res) => {
           .json({ message: 'Incorrect email or password, please try again' });
         return;
       }
-  
+  console.log(userData)
       req.session.save(() => {
         req.session.user_id = userData.id;
         req.session.logged_in = true;
@@ -49,7 +50,6 @@ router.post('/logout', (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
-
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
@@ -60,6 +60,20 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+router.post('/cart', withAuth, async(req,res) =>{
+  console.log('body', req.body)
+  try{
+    const cartData = await Cart.create({
+      items: JSON.stringify([req.body.product]),
+      user_id: req.session.user_id
+    });
+    res.status(200).json(cartData)
+  }
+  catch(err){
+    console.log(err)
+  }
+})
 
   
 
