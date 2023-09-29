@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Product } = require('../models')
-const withAuth = require('../utils/auth');
+// const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
 try{
@@ -51,10 +51,11 @@ router.get('/signup', async (req, res) => {
     res.redirect('/');
     return; 
 }
-res.render('login')
+res.render('login');
 });
 
-
-
+router.get('/cart', async (req,res) =>{
+  res.render('cart')
+})
 
 module.exports = router;
