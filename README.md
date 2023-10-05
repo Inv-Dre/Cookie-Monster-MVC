@@ -38,10 +38,15 @@ Have a professional README (with unique name, description, technologies used, sc
 
 # Technologies Used
 HTML / CSS / Javascript (For frontend)
+
 Bulma (CSS Framework)
+
 Node / MySQL / Heroku (For backend)
+
 Bycrpt (for password hashing)
+
 Sequalize ,express
+
 # Heroku link to the deployed app:
 (https://cookie-monster-mvc-b8ff3eb840fd.herokuapp.com/)
 
