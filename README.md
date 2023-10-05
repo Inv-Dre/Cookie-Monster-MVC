@@ -37,15 +37,15 @@ Meet good-quality coding standards (file structure, naming conventions, follows 
 Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 # Technologies Used
-HTML / CSS / Javascript (For frontend)
+HTML / CSS / Javascript (For frontend).
 
-Bulma (CSS Framework)
+Bulma (CSS Framework).
 
-Node / MySQL / Heroku (For backend)
+Node / MySQL / Heroku (For backend).
 
-Bycrpt (for password hashing)
+Bycrpt (for password hashing).
 
-Sequalize ,express
+Sequalize ,express.
 
 # Heroku link to the deployed app:
 (https://cookie-monster-mvc-b8ff3eb840fd.herokuapp.com/)
