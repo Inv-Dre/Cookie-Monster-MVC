@@ -50,3 +50,7 @@ Sequalize ,express.
 # Heroku link to the deployed app:
 (https://cookie-monster-mvc-b8ff3eb840fd.herokuapp.com/)
 
+# APP
+![Desktop Screenshot 2023 10 05 - 14 12 21 24](https://github.com/Inv-Dre/Cookie-Monster-MVC/assets/135474781/a80c3716-9fab-40d8-aa89-5afa2abd23cf)
+
+
