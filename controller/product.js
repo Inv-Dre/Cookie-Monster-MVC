@@ -57,12 +57,18 @@ res.render('login');
 router.get('/cart', withAuth,  async (req,res) =>{
   const cartData = await User.findOne({ where: { id: req.session.user_id },
     include:{model: Cart}})
-    const cart =cartData.cart ? cartData.get({plain:true}) : null
+    const cart = cartData.cart ? cartData.get({plain:true}) : null
    
-    const productId = cart?.cart ? JSON.parse(cart.cart.items)[0]: null
-    const productData = await Product.findByPk(productId)
-    const product = productData ? productData.get({plain:true}) : null
+    for (let i = 0; i < cart.cart.items.length; i++) {
+      const productId = cart?.cart ? JSON.parse(cart.cart.items)[i]:null
+      const productData = await Product.findByPk(productId)
+      const product = productData ? productData.get({plain:true}) : null
     console.log(product)
+    }
+    // const productId = cart?.cart ? JSON.parse(cart.cart.items)[0]: null
+    // const productData = await Product.findByPk(productId)
+    // const product = productData ? productData.get({plain:true}) : null
+    // console.log(product)
   res.render('cart', product)
 })
 

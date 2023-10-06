@@ -6,7 +6,7 @@ const productData = [
         price: 799.99,
         stock: 100,
         category_id: 1,
-        filename:"01-iphone-15.jpg"
+        filename:"01-iphone-15.jpg",
     },
     {
         product_name: 'Peloton Exercise Bike',

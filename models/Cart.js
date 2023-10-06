@@ -14,7 +14,7 @@ Cart.init(
           allowNull: false,
           references: {
             model: "user",
-          
+            key:"id",
           },
           required: true,
         },

@@ -20,6 +20,14 @@ User.hasOne(Cart,{
     foreignKey: 'user_id'
 });
 
+// Cart.hasMany(Product, {
+//     foreignKey:"user_id"
+// })
+
+User.hasMany(Product, {
+    foreignKey: "user_id"
+})
+
 // Order.belongsTo(User, {
 //     foreignKey: 'customer_id'
 // });
